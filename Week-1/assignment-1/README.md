@@ -55,6 +55,7 @@ This can be useful in situations where one of the other processors doesn’t pro
 
 The script processor has the following configuration settings:
 
+<<<<<<< HEAD
 `lang`, `tag`, `source`, `file`, `files`, `params`, `tag_on_exception`, `timeout`, `max_cached_sessions`
 
 
@@ -64,3 +65,41 @@ $ npm install
 ```
 
 ### Available CLI commands
+=======
+* lang
+* tag
+* source
+* file
+* files
+* params
+* tag_on_exception
+* timeout
+* max_cached_sessions
+
+Tree construction
+--------------------
+
+The CSSOM and DOM trees are combined into a render tree, which is then used to compute the layout of each visible element and serves as an input to the paint process which renders the pixels to screen. Optimizing each of these steps is critical to achieve optimal rendering performance.
+
+
+Order of script processing
+--------------------
+
+Depending on the type of object, the task may have more than one Process page on which you can write scripts. The scripts in the Process pages are processed in the following order:
+
+* Pre-Process page and Process page
+* Child Post Process page
+* Post Process page
+
+
+Layout and Painting
+--------------------
+
+## Layout
+
+The fourth step in the critical rendering path is running layout on the render tree to compute the geometry of each node. Layout is the process by which the width, height, and location of all the nodes in the render tree are determined, plus the determination of the size and position of each object on the page. Reflow is any subsequent size and position determination of any part of the page or the entire document.
+
+## Paint
+
+The last step in the critical rendering path is painting the individual nodes to the screen, the first occurrence of which is called the first meaningful paint. In the painting or rasterization phase, the browser converts each box calculated in the layout phase to actual pixels on the screen. Painting involves drawing every visual part of an element to the screen, including text, colors, borders, shadows, and replaced elements like buttons and images. The browser needs to do this super quickly.
+>>>>>>> feedback
